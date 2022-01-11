@@ -17,6 +17,8 @@ git commit -m "init"
 git push --set-upstream origin master
 ```
 
+.
+
 ## Resources
 
 - [How to structure large Flask applications](https://www.digitalocean.com/community/tutorials/how-to-structure-large-flask-applications)
