@@ -11,8 +11,8 @@ pip install -r requirements.txt
 git init
 pre-commit install
 git checkout -b master
-git add -A
 git remote add origin git@github.com:olivierbenard/foo-project.git
+git add -A
 git commit -m "init"
 git push --set-upstream origin master
 ```
