@@ -1,0 +1,19 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+        architecture: x64
+    - name: install black
+      run:
+        pip install -U black
+    - name: test
+      run: black --check .
